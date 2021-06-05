@@ -1,0 +1,2 @@
+/*Config*/
+B.githubrepo="";B.searchinj=function(a,d,e){""!==B.githubrepo&&(a=encodeURIComponent(d)+"+in:file+language:html+repo:"+B.githubrepo,$.aj("https://api.github.com/search/code?q\x3d"+a,{},{success:function(b){b=JSON.parse(b).items;var a=[],c;for(c in b)a.push(parseInt(b[c].name.replace("post-","").replace(".html","")));e(a)},failed:function(a){console.log("API Search failed")}},"get","",!0))};
